@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TailWindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CountDown</title>
+</head>
+
+<body class="bg-slate-800">
+
+    <div id="message" class="flex justify-center pt-10 font-bold text-4xl text-white"></div>
+
+    <div id="countDown" class="flex justify-center items-center flex-wrap h-screen w-scree">
+        <div id="d"
+            class="bg-indigo-500 shadow-lg shadow-indigo-600/50 text-white text-6xl mx-5 p-10 bg-indigo-900 rounded-lg hover:transition hover:-rotate-45 hover:">
+            0 d
+        </div>
+        <div id="hr"
+            class="bg-indigo-500 shadow-lg shadow-indigo-600/50 text-white text-6xl mx-5 p-10 bg-indigo-900 rounded-lg hover:transition hover:-rotate-45 hover:">
+            0 hrs
+        </div>
+        <div id="min"
+            class="bg-indigo-500 shadow-lg shadow-indigo-600/50 text-white text-6xl mx-5 p-10 bg-indigo-900 rounded-lg hover:transition hover:rotate-45 hover:">
+            0 min
+        </div>
+        <div id="sec"
+            class="bg-indigo-500 shadow-lg shadow-indigo-600/50 text-white text-6xl mx-5 p-10 bg-indigo-900 rounded-lg hover:transition hover:rotate-45 hover:">
+            0 sec
+        </div>
+    </div>
+
+    <div id="timeOut" class="flex justify-center items-center flex-wrap h-screen w-scree hidden">
+        <div id="messageTimeOut" class="bg-indigo-500 shadow-lg shadow-indigo-600/50 text-white text-6xl mx-5 p-10 bg-indigo-900 rounded-lg hover:transition hover:-rotate-45 hover:"></div>
+    </div>
+
+</body>
+<script type="module" src="./js/index.js"></script>
+
+</html>
